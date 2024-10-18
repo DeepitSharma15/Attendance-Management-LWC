@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Attendance - Punch In / Punch Out" >
+        <!-- Horizontal Layout Container -->
+        <div class="horizontal-container">
+            <!-- Current Date and Time -->
+            <div class="datetime-section">
+                <lightning-formatted-date-time
+                    value={currentDateTime}
+                    year="numeric"
+                    month="long"
+                    day="2-digit"
+                    hour="2-digit"
+                    minute="2-digit"
+                    second="2-digit"
+                    time-zone-name="short">
+                </lightning-formatted-date-time>
+            </div>
+
+            <!-- Display Punch In, Punch Out, and Total Time in Horizontal Line -->
+            <div class="time-display">
+                <div if:true={punchInTime} class="time-item">Punch In: <span class="time-to-display">{punchInTime}</span> </div>
+                <div if:true={punchOutTime} class="time-item">Punch Out: <span class="time-to-display">{punchOutTime}</span> </div>
+                <div if:true={totalTime} class="time-item">Total Time: <span class="time-to-display">{totalTime}</span> </div>
+            </div>
+
+            <!-- Punch In / Punch Out Buttons -->
+            <div class="button-section">
+                <lightning-button 
+                    label="Punch In" 
+                    class="action-button"
+                    onclick={handlePunchIn} 
+                    disabled={isPunchedIn}>
+                </lightning-button>
+                <lightning-button 
+                    label="Punch Out" 
+                    class="action-button"
+                    onclick={handlePunchOut} 
+                    disabled={isPunchedOut}>
+                </lightning-button>
+                <lightning-button 
+                    label="Work From Home" 
+                    class="action-button work-button"
+                    onclick={handleWorkFromHome}
+                    disabled={isWorkFromHome}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

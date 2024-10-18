@@ -1,0 +1,62 @@
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.datetime-section {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #2E4053;
+}
+
+.time-display {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.time-item {
+    display: inline-block;
+}
+
+.button-section {
+    display: flex;
+    gap: 10px; 
+}
+
+
+.action-button {
+    background-color: #1A73E8; 
+    color: white; 
+    border-radius: 10px; 
+    font-weight: bold;
+}
+
+.action-button:hover {
+    background-color: #0c5ab8; 
+    cursor: pointer;
+}
+
+.work-button {
+    background-color: #28a745; 
+    color: white;
+}
+
+.work-button:hover {
+    background-color: #218838; 
+    cursor: pointer;
+}
+
+.time-to-display {
+    font-weight: normal;
+    color: #333;
+}
