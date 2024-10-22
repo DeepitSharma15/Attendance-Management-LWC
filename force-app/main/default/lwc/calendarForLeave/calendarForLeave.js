@@ -47,7 +47,7 @@ export default class CalendarForLeave extends LightningElement {
             .catch(error => console.log(error))
     }
     
-           
+      // Adding comment above intialize calendar function to check if its working
     initializeCalendar() { 
         //console.log('Intialize Calendar and list is: '+this.holidayList);
         //list = this.holidayList;
