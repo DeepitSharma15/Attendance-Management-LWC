@@ -1,5 +1,6 @@
 public with sharing class AttendanceController {
 
+    // Adding comment by LJ
     @AuraEnabled(cacheable=true)
     public static List<User> getUsers() {
         Id currentUserId = UserInfo.getUserId(); // Get the current user ID
