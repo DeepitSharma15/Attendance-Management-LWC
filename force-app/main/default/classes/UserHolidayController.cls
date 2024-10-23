@@ -1,4 +1,5 @@
 public with sharing class UserHolidayController {
+    // comment for testing merge Rebase
     @AuraEnabled
     public static String createHolidayRecord(String name, Date holidayDate, String holidayType, Date holidayEndDate) {
         Id currentUserId = UserInfo.getUserId();
