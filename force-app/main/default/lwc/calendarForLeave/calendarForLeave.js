@@ -60,6 +60,7 @@ export default class CalendarForLeave extends LightningElement {
             showNonCurrentDates: false,
             fixedWeekCount: false,
             allDaySlot: false,
+            timeformat: 'h:mm a',
             navLinks: false,
             events: this.holidayList,
             eventClick: this.handleEventClick.bind(this),
