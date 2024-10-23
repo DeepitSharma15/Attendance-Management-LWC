@@ -5,8 +5,8 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-//     Integer month = Date.today().month();
-//     Integer year = Date.today().year();
+    Integer month = Date.today().month();
+    Integer year = Date.today().year();
 
 // Date startDate = Date.today().toStartOfMonth();
 // Date endDate = Date.today().toStartOfMonth().addDays(Date.daysInMonth(year, month) - 1); 
